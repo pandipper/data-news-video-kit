@@ -1,6 +1,21 @@
-# 数据新闻解释视频 · 模板工程
+<p align="center"><img src="docs/logo.png" width="120" alt="data-news-video-kit"></p>
 
-把一份研究报告做成 5 分半的横版解释视频。**这条片子本身是模板**——所有镜头代码、图元、脚本、时间轴都在仓库里，换一份报告就能重做一条。
+<h1 align="center">数据新闻解释视频 · 模板工程</h1>
+
+<p align="center">
+把一份研究报告做成 5 分半的横版解释视频。<br>
+<strong>这条片子本身是模板</strong>——所有镜头代码、图元、脚本、时间轴都在仓库里，换一份报告就能重做一条。
+</p>
+
+<p align="center">
+<a href="https://www.youtube.com/watch?v=5FSVn6ccTNo"><b>▶ 成品演示</b></a>
+　·　
+<a href="https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia">Reuters 原文</a>
+　·　
+<a href="#上手做一条新片子">上手</a>
+</p>
+
+---
 
 基于两个上游项目，本仓库只做「怎么用它们做一条完整片子」的实践沉淀：
 
@@ -534,19 +549,30 @@ a2e 默认把它放在最低层（原设计里章节卡占章前空白）。本�
 
 ## 许可证
 
-本仓库的**镜头代码、脚本、文档**采用 [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)：
+本仓库采用 [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)：
 
 > **Required Notice:** Copyright (c) 2026 Vincent Wei (https://github.com/Vincentwei1021/anything2explainer)
 
-因为核心框架来自 anything2explainer，其许可证要求：
+**为什么不是 MIT。** 这不是选择，是约束——`remotion/src` 里的 `Main.tsx`、`ui.tsx`、`fx.tsx`、`overlay/` 都来自 anything2explainer，本仓库是它的衍生作品。上游用 PolyForm Noncommercial，衍生作品必须继承同一许可，不能单方面改成 MIT（MIT 允许商用，会与上游直接冲突）。
 
-- 非商业使用免费，**商业使用需原作者授权**
-- 分发时必须保留上述 Required Notice
-- 用这套工具做出来的**视频归创作者所有**（不受此限制）
+许可范围：
 
-如果你要在商业项目里用，先去 [anything2explainer](https://github.com/Vincentwei1021/anything2explainer) 找作者拿授权。
+| 内容 | 许可 | 说明 |
+|---|---|---|
+| Remotion 工程、镜头代码、脚本 | PolyForm Noncommercial 1.0.0 | 非商业免费，商业需授权 |
+| 文档、截图、`sources.json` | 同上 | 作为工程的组成部分 |
+| 用这套工具产出的**视频** | **归创作者所有** | 不受上述限制 |
+| 字体（`public/fonts/`） | SIL OFL 1.1 | 可自由分发 |
+| 图标（Lucide） | ISC | 见 `tools/LUCIDE_LICENSE.txt` |
 
-本片成片（YouTube 上那条）的版权归制作方，与本仓库的代码许可无关。
+**商业使用怎么办。** 两步：
+
+1. 找 [Vincent Wei](https://github.com/Vincentwei1021/anything2explainer) 拿 anything2explainer 的商业授权
+2. 本仓库随之放开（因为它的约束全部来自上游）
+
+**只想参考思路、不想受约束。** 读 README 的前半部分和 `docs/project-log.md` 就够了——那里面是方法论（怎么取证、怎么排版、怎么混音），不涉及代码许可。代码部分重新实现一遍即可。
+
+本片成片（[YouTube 上那条](https://www.youtube.com/watch?v=5FSVn6ccTNo)）的版权归制作方，与代码许可无关。
 
 ---
 
