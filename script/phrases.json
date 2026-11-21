@@ -1,0 +1,1307 @@
+{
+ "total": 332.929,
+ "phrases": [
+  {
+   "i": 1,
+   "s": 0.0,
+   "e": 1.52,
+   "text": "Malaysia's media landscape in"
+  },
+  {
+   "i": 2,
+   "s": 1.52,
+   "e": 3.76,
+   "text": "2026 written by Zaharom"
+  },
+  {
+   "i": 3,
+   "s": 3.76,
+   "e": 5.12,
+   "text": "Nain and Aril Mikhail"
+  },
+  {
+   "i": 4,
+   "s": 5.28,
+   "e": 6.64,
+   "text": "published on June 16th"
+  },
+  {
+   "i": 5,
+   "s": 6.72,
+   "e": 7.84,
+   "text": "2026"
+  },
+  {
+   "i": 6,
+   "s": 8.56,
+   "e": 10.56,
+   "text": "Malaysia's contemporary media landscape"
+  },
+  {
+   "i": 7,
+   "s": 10.56,
+   "e": 12.0,
+   "text": "is currently characterised by"
+  },
+  {
+   "i": 8,
+   "s": 12.0,
+   "e": 13.68,
+   "text": "a sharp paradox The"
+  },
+  {
+   "i": 9,
+   "s": 13.68,
+   "e": 15.44,
+   "text": "longawaited Malaysian Media Council"
+  },
+  {
+   "i": 10,
+   "s": 15.44,
+   "e": 17.04,
+   "text": "finally became operational in"
+  },
+  {
+   "i": 11,
+   "s": 17.04,
+   "e": 19.36,
+   "text": "2025 offering the prospect"
+  },
+  {
+   "i": 12,
+   "s": 19.36,
+   "e": 20.96,
+   "text": "of genuine selfregulation for"
+  },
+  {
+   "i": 13,
+   "s": 20.96,
+   "e": 21.76,
+   "text": "the first time in"
+  },
+  {
+   "i": 14,
+   "s": 21.76,
+   "e": 22.24,
+   "text": "decades"
+  },
+  {
+   "i": 15,
+   "s": 22.595,
+   "e": 23.475,
+   "text": "Yet a succession of"
+  },
+  {
+   "i": 16,
+   "s": 23.475,
+   "e": 25.155,
+   "text": "incidents physical attacks on"
+  },
+  {
+   "i": 17,
+   "s": 25.155,
+   "e": 26.515,
+   "text": "journalists and arrests linked"
+  },
+  {
+   "i": 18,
+   "s": 26.595,
+   "e": 27.955,
+   "text": "to reporting have tested"
+  },
+  {
+   "i": 19,
+   "s": 27.955,
+   "e": 28.595,
+   "text": "those hopes"
+  },
+  {
+   "i": 20,
+   "s": 29.317,
+   "e": 30.037,
+   "text": "The passing of the"
+  },
+  {
+   "i": 21,
+   "s": 30.037,
+   "e": 31.557,
+   "text": "Malaysian Media Council Act"
+  },
+  {
+   "i": 22,
+   "s": 31.717,
+   "e": 32.837,
+   "text": "saw the establishment of"
+  },
+  {
+   "i": 23,
+   "s": 32.837,
+   "e": 34.277,
+   "text": "the Malaysian Media Council"
+  },
+  {
+   "i": 24,
+   "s": 34.437,
+   "e": 35.797,
+   "text": "or MMC in June"
+  },
+  {
+   "i": 25,
+   "s": 35.797,
+   "e": 38.357,
+   "text": "2025 Its elected Governing"
+  },
+  {
+   "i": 26,
+   "s": 38.357,
+   "e": 40.117,
+   "text": "Board comprises representatives from"
+  },
+  {
+   "i": 27,
+   "s": 40.117,
+   "e": 42.757,
+   "text": "media companies journalists broadcasters"
+  },
+  {
+   "i": 28,
+   "s": 42.997,
+   "e": 45.397,
+   "text": "civil society organisations academics"
+  },
+  {
+   "i": 29,
+   "s": 45.477,
+   "e": 46.677,
+   "text": "and government agencies"
+  },
+  {
+   "i": 30,
+   "s": 47.029,
+   "e": 48.149,
+   "text": "This marks a departure"
+  },
+  {
+   "i": 31,
+   "s": 48.149,
+   "e": 49.349,
+   "text": "from decades of governmentled"
+  },
+  {
+   "i": 32,
+   "s": 49.589,
+   "e": 50.549,
+   "text": "media oversight"
+  },
+  {
+   "i": 33,
+   "s": 51.353,
+   "e": 52.473,
+   "text": "The MMC has moved"
+  },
+  {
+   "i": 34,
+   "s": 52.473,
+   "e": 53.513,
+   "text": "quickly to take public"
+  },
+  {
+   "i": 35,
+   "s": 53.513,
+   "e": 54.873,
+   "text": "positions on press freedom"
+  },
+  {
+   "i": 36,
+   "s": 54.873,
+   "e": 56.713,
+   "text": "incidents In January it"
+  },
+  {
+   "i": 37,
+   "s": 56.713,
+   "e": 57.593,
+   "text": "called the arrest of"
+  },
+  {
+   "i": 38,
+   "s": 57.593,
+   "e": 58.793,
+   "text": "journalist Rex Tan for"
+  },
+  {
+   "i": 39,
+   "s": 58.793,
+   "e": 60.073,
+   "text": "asking a question deemed"
+  },
+  {
+   "i": 40,
+   "s": 60.073,
+   "e": 61.193,
+   "text": "racially sensitive at a"
+  },
+  {
+   "i": 41,
+   "s": 61.193,
+   "e": 62.553,
+   "text": "public lecture on Gaza"
+  },
+  {
+   "i": 42,
+   "s": 62.713,
+   "e": 64.473,
+   "text": "unnecessary and punitive and"
+  },
+  {
+   "i": 43,
+   "s": 64.473,
+   "e": 65.993,
+   "text": "demanded his immediate release"
+  },
+  {
+   "i": 44,
+   "s": 66.777,
+   "e": 67.737,
+   "text": "Events such as a"
+  },
+  {
+   "i": 45,
+   "s": 67.737,
+   "e": 69.097,
+   "text": "daytime attack on sports"
+  },
+  {
+   "i": 46,
+   "s": 69.097,
+   "e": 70.457,
+   "text": "journalist Haresh Deol in"
+  },
+  {
+   "i": 47,
+   "s": 70.457,
+   "e": 72.377,
+   "text": "November 2025 have caused"
+  },
+  {
+   "i": 48,
+   "s": 72.377,
+   "e": 74.057,
+   "text": "further unease among journalists"
+  },
+  {
+   "i": 49,
+   "s": 74.428,
+   "e": 75.468,
+   "text": "Deol had been reporting"
+  },
+  {
+   "i": 50,
+   "s": 75.468,
+   "e": 76.748,
+   "text": "on the Football Association"
+  },
+  {
+   "i": 51,
+   "s": 76.748,
+   "e": 78.508,
+   "text": "of Malaysia's heritageplayer document"
+  },
+  {
+   "i": 52,
+   "s": 78.508,
+   "e": 79.788,
+   "text": "scandal in which FIFA"
+  },
+  {
+   "i": 53,
+   "s": 79.788,
+   "e": 81.228,
+   "text": "sanctioned the association and"
+  },
+  {
+   "i": 54,
+   "s": 81.228,
+   "e": 82.588,
+   "text": "seven players for forgery"
+  },
+  {
+   "i": 55,
+   "s": 82.668,
+   "e": 83.868,
+   "text": "and falsification linked to"
+  },
+  {
+   "i": 56,
+   "s": 83.948,
+   "e": 85.148,
+   "text": "eligibility documents"
+  },
+  {
+   "i": 57,
+   "s": 85.516,
+   "e": 86.636,
+   "text": "Deol said two men"
+  },
+  {
+   "i": 58,
+   "s": 86.636,
+   "e": 87.436,
+   "text": "attacked him while a"
+  },
+  {
+   "i": 59,
+   "s": 87.436,
+   "e": 88.796,
+   "text": "third filmed the incident"
+  },
+  {
+   "i": 60,
+   "s": 89.036,
+   "e": 90.396,
+   "text": "prompting concern among media"
+  },
+  {
+   "i": 61,
+   "s": 90.396,
+   "e": 91.436,
+   "text": "freedom groups such as"
+  },
+  {
+   "i": 62,
+   "s": 91.436,
+   "e": 93.196,
+   "text": "Gerakan Media Merdeka about"
+  },
+  {
+   "i": 63,
+   "s": 93.196,
+   "e": 94.316,
+   "text": "possible intimidation"
+  },
+  {
+   "i": 64,
+   "s": 94.686,
+   "e": 96.206,
+   "text": "Police subsequently arrested a"
+  },
+  {
+   "i": 65,
+   "s": 96.206,
+   "e": 97.646,
+   "text": "suspect who was charged"
+  },
+  {
+   "i": 66,
+   "s": 97.646,
+   "e": 98.686,
+   "text": "with assault and criminal"
+  },
+  {
+   "i": 67,
+   "s": 98.686,
+   "e": 100.926,
+   "text": "intimidation pleaded guilty and"
+  },
+  {
+   "i": 68,
+   "s": 100.926,
+   "e": 102.446,
+   "text": "was later fined 2000"
+  },
+  {
+   "i": 69,
+   "s": 102.446,
+   "e": 104.606,
+   "text": "ringgit about 500 US"
+  },
+  {
+   "i": 70,
+   "s": 104.606,
+   "e": 104.606,
+   "text": "dollars"
+  },
+  {
+   "i": 71,
+   "s": 105.245,
+   "e": 106.525,
+   "text": "The major recent policy"
+  },
+  {
+   "i": 72,
+   "s": 106.525,
+   "e": 107.725,
+   "text": "development has been the"
+  },
+  {
+   "i": 73,
+   "s": 107.725,
+   "e": 110.045,
+   "text": "implementation in January 2026"
+  },
+  {
+   "i": 74,
+   "s": 110.125,
+   "e": 111.245,
+   "text": "of the Online Safety"
+  },
+  {
+   "i": 75,
+   "s": 111.245,
+   "e": 113.565,
+   "text": "Act 2025 which extends"
+  },
+  {
+   "i": 76,
+   "s": 113.565,
+   "e": 115.485,
+   "text": "regulatory oversight of platforms"
+  },
+  {
+   "i": 77,
+   "s": 115.805,
+   "e": 116.925,
+   "text": "It means major platforms"
+  },
+  {
+   "i": 78,
+   "s": 116.925,
+   "e": 117.885,
+   "text": "such as TikTok and"
+  },
+  {
+   "i": 79,
+   "s": 117.885,
+   "e": 119.565,
+   "text": "Instagram are now automatically"
+  },
+  {
+   "i": 80,
+   "s": 119.565,
+   "e": 120.605,
+   "text": "subject to a wider"
+  },
+  {
+   "i": 81,
+   "s": 120.605,
+   "e": 121.725,
+   "text": "set of Malaysian laws"
+  },
+  {
+   "i": 82,
+   "s": 122.158,
+   "e": 123.118,
+   "text": "The government has said"
+  },
+  {
+   "i": 83,
+   "s": 123.198,
+   "e": 124.238,
+   "text": "that with the rapid"
+  },
+  {
+   "i": 84,
+   "s": 124.238,
+   "e": 125.678,
+   "text": "expansion of digital media"
+  },
+  {
+   "i": 85,
+   "s": 125.998,
+   "e": 126.878,
+   "text": "the Act will enhance"
+  },
+  {
+   "i": 86,
+   "s": 126.878,
+   "e": 127.918,
+   "text": "the protection of children"
+  },
+  {
+   "i": 87,
+   "s": 128.158,
+   "e": 129.758,
+   "text": "prevent online scams and"
+  },
+  {
+   "i": 88,
+   "s": 129.758,
+   "e": 130.958,
+   "text": "help in combating fraud"
+  },
+  {
+   "i": 89,
+   "s": 131.597,
+   "e": 132.797,
+   "text": "However at least three"
+  },
+  {
+   "i": 90,
+   "s": 132.797,
+   "e": 134.717,
+   "text": "media freedom organisations the"
+  },
+  {
+   "i": 91,
+   "s": 134.717,
+   "e": 136.477,
+   "text": "Centre for Independent Journalism"
+  },
+  {
+   "i": 92,
+   "s": 136.477,
+   "e": 138.157,
+   "text": "Article 19 and Sinar"
+  },
+  {
+   "i": 93,
+   "s": 138.157,
+   "e": 139.597,
+   "text": "Project issued a lengthy"
+  },
+  {
+   "i": 94,
+   "s": 139.597,
+   "e": 141.197,
+   "text": "statement decrying this latest"
+  },
+  {
+   "i": 95,
+   "s": 141.197,
+   "e": 142.237,
+   "text": "move by the government"
+  },
+  {
+   "i": 96,
+   "s": 142.397,
+   "e": 143.517,
+   "text": "For them the risk"
+  },
+  {
+   "i": 97,
+   "s": 143.517,
+   "e": 144.637,
+   "text": "of abuse and selective"
+  },
+  {
+   "i": 98,
+   "s": 144.637,
+   "e": 146.237,
+   "text": "enforcement is high with"
+  },
+  {
+   "i": 99,
+   "s": 146.237,
+   "e": 147.597,
+   "text": "growing evidence of targeted"
+  },
+  {
+   "i": 100,
+   "s": 147.597,
+   "e": 149.677,
+   "text": "suppression or arbitrary takedowns"
+  },
+  {
+   "i": 101,
+   "s": 150.379,
+   "e": 152.459,
+   "text": "Malaysiakini the country's oldest"
+  },
+  {
+   "i": 102,
+   "s": 152.459,
+   "e": 154.459,
+   "text": "independent news portal endured"
+  },
+  {
+   "i": 103,
+   "s": 154.459,
+   "e": 155.259,
+   "text": "a troubled year"
+  },
+  {
+   "i": 104,
+   "s": 155.632,
+   "e": 156.752,
+   "text": "Having already laid off"
+  },
+  {
+   "i": 105,
+   "s": 156.752,
+   "e": 157.712,
+   "text": "staff as part of"
+  },
+  {
+   "i": 106,
+   "s": 157.712,
+   "e": 159.312,
+   "text": "a restructuring exercise announced"
+  },
+  {
+   "i": 107,
+   "s": 159.312,
+   "e": 161.072,
+   "text": "in 2024 it was"
+  },
+  {
+   "i": 108,
+   "s": 161.152,
+   "e": 162.992,
+   "text": "rocked in March 2026"
+  },
+  {
+   "i": 109,
+   "s": 162.992,
+   "e": 164.032,
+   "text": "by the discovery that"
+  },
+  {
+   "i": 110,
+   "s": 164.032,
+   "e": 166.032,
+   "text": "3 million ringgit approximately"
+  },
+  {
+   "i": 111,
+   "s": 166.032,
+   "e": 168.512,
+   "text": "750000 US dollars had"
+  },
+  {
+   "i": 112,
+   "s": 168.512,
+   "e": 169.392,
+   "text": "been diverted from its"
+  },
+  {
+   "i": 113,
+   "s": 169.392,
+   "e": 171.152,
+   "text": "subsidiaries by former employees"
+  },
+  {
+   "i": 114,
+   "s": 171.152,
+   "e": 172.672,
+   "text": "to entities suspected by"
+  },
+  {
+   "i": 115,
+   "s": 172.672,
+   "e": 173.712,
+   "text": "the company of running"
+  },
+  {
+   "i": 116,
+   "s": 173.792,
+   "e": 175.472,
+   "text": "unlicensed investment schemes"
+  },
+  {
+   "i": 117,
+   "s": 175.822,
+   "e": 176.942,
+   "text": "The funds represented a"
+  },
+  {
+   "i": 118,
+   "s": 176.942,
+   "e": 178.062,
+   "text": "significant part of the"
+  },
+  {
+   "i": 119,
+   "s": 178.062,
+   "e": 179.742,
+   "text": "company's reserves built up"
+  },
+  {
+   "i": 120,
+   "s": 179.742,
+   "e": 180.462,
+   "text": "over more than a"
+  },
+  {
+   "i": 121,
+   "s": 180.462,
+   "e": 180.942,
+   "text": "decade"
+  },
+  {
+   "i": 122,
+   "s": 181.745,
+   "e": 183.105,
+   "text": "Around a third 32"
+  },
+  {
+   "i": 123,
+   "s": 183.105,
+   "e": 184.385,
+   "text": "percent of Malaysians now"
+  },
+  {
+   "i": 124,
+   "s": 184.385,
+   "e": 186.065,
+   "text": "access content from influencers"
+  },
+  {
+   "i": 125,
+   "s": 186.065,
+   "e": 187.425,
+   "text": "and content creators who"
+  },
+  {
+   "i": 126,
+   "s": 187.425,
+   "e": 188.225,
+   "text": "are focused on the"
+  },
+  {
+   "i": 127,
+   "s": 188.225,
+   "e": 190.305,
+   "text": "news The major influencers"
+  },
+  {
+   "i": 128,
+   "s": 190.305,
+   "e": 191.825,
+   "text": "are popular often youngish"
+  },
+  {
+   "i": 129,
+   "s": 191.825,
+   "e": 193.345,
+   "text": "politicians and activists"
+  },
+  {
+   "i": 130,
+   "s": 193.633,
+   "e": 195.313,
+   "text": "Former UMNO youth head"
+  },
+  {
+   "i": 131,
+   "s": 195.393,
+   "e": 196.993,
+   "text": "Khairy Jamaluddin has his"
+  },
+  {
+   "i": 132,
+   "s": 196.993,
+   "e": 198.833,
+   "text": "weekly Keluar Sekejap podcast"
+  },
+  {
+   "i": 133,
+   "s": 198.993,
+   "e": 200.193,
+   "text": "and retired politician and"
+  },
+  {
+   "i": 134,
+   "s": 200.193,
+   "e": 201.713,
+   "text": "technocrat Idris Jala and"
+  },
+  {
+   "i": 135,
+   "s": 201.713,
+   "e": 203.233,
+   "text": "his son Leon also"
+  },
+  {
+   "i": 136,
+   "s": 203.233,
+   "e": 204.353,
+   "text": "have a weekly podcast"
+  },
+  {
+   "i": 137,
+   "s": 204.513,
+   "e": 205.713,
+   "text": "The Game of Impossible"
+  },
+  {
+   "i": 138,
+   "s": 206.113,
+   "e": 207.153,
+   "text": "Both use Spotify as"
+  },
+  {
+   "i": 139,
+   "s": 207.153,
+   "e": 209.153,
+   "text": "their platform Activist Roshinee"
+  },
+  {
+   "i": 140,
+   "s": 209.153,
+   "e": 210.273,
+   "text": "Mookaiah provides a more"
+  },
+  {
+   "i": 141,
+   "s": 210.273,
+   "e": 211.633,
+   "text": "critical stance on Instagram"
+  },
+  {
+   "i": 142,
+   "s": 211.985,
+   "e": 213.345,
+   "text": "Together with former minister"
+  },
+  {
+   "i": 143,
+   "s": 213.345,
+   "e": 214.865,
+   "text": "Rafizi Ramli and with"
+  },
+  {
+   "i": 144,
+   "s": 214.865,
+   "e": 216.145,
+   "text": "his Yang Berhenti Menteri"
+  },
+  {
+   "i": 145,
+   "s": 216.145,
+   "e": 217.985,
+   "text": "podcast on YouTube these"
+  },
+  {
+   "i": 146,
+   "s": 217.985,
+   "e": 220.065,
+   "text": "influencers sometimes with invited"
+  },
+  {
+   "i": 147,
+   "s": 220.065,
+   "e": 221.905,
+   "text": "guests provide interpretations and"
+  },
+  {
+   "i": 148,
+   "s": 221.905,
+   "e": 223.265,
+   "text": "commentary on current news"
+  },
+  {
+   "i": 149,
+   "s": 223.425,
+   "e": 224.945,
+   "text": "which many consider refreshing"
+  },
+  {
+   "i": 150,
+   "s": 224.945,
+   "e": 226.305,
+   "text": "independent and entertaining"
+  },
+  {
+   "i": 151,
+   "s": 227.009,
+   "e": 228.289,
+   "text": "Elsewhere in the industry"
+  },
+  {
+   "i": 152,
+   "s": 228.289,
+   "e": 229.729,
+   "text": "other individuals are also"
+  },
+  {
+   "i": 153,
+   "s": 229.729,
+   "e": 231.569,
+   "text": "in the limelight Astro"
+  },
+  {
+   "i": 154,
+   "s": 231.569,
+   "e": 232.689,
+   "text": "Awani lost its young"
+  },
+  {
+   "i": 155,
+   "s": 232.929,
+   "e": 235.969,
+   "text": "enterprising EditorinChief Ashwad Ismail"
+  },
+  {
+   "i": 156,
+   "s": 236.129,
+   "e": 237.409,
+   "text": "to the national broadcaster"
+  },
+  {
+   "i": 157,
+   "s": 237.489,
+   "e": 239.489,
+   "text": "RTM as its DirectorGeneral"
+  },
+  {
+   "i": 158,
+   "s": 239.569,
+   "e": 240.369,
+   "text": "of Broadcasting"
+  },
+  {
+   "i": 159,
+   "s": 240.723,
+   "e": 242.403,
+   "text": "Malaysia's Minister of Investment"
+  },
+  {
+   "i": 160,
+   "s": 242.483,
+   "e": 244.403,
+   "text": "Trade and Industry Johari"
+  },
+  {
+   "i": 161,
+   "s": 244.403,
+   "e": 245.763,
+   "text": "Abdul Ghani who is"
+  },
+  {
+   "i": 162,
+   "s": 245.763,
+   "e": 247.683,
+   "text": "a major shareholder 25"
+  },
+  {
+   "i": 163,
+   "s": 247.683,
+   "e": 248.963,
+   "text": "percent of media giant"
+  },
+  {
+   "i": 164,
+   "s": 248.963,
+   "e": 250.403,
+   "text": "Media Prima saw his"
+  },
+  {
+   "i": 165,
+   "s": 250.403,
+   "e": 252.563,
+   "text": "son Amir Nashrin join"
+  },
+  {
+   "i": 166,
+   "s": 252.563,
+   "e": 253.443,
+   "text": "him on the shareholder"
+  },
+  {
+   "i": 167,
+   "s": 253.443,
+   "e": 254.563,
+   "text": "list with his own"
+  },
+  {
+   "i": 168,
+   "s": 254.563,
+   "e": 256.563,
+   "text": "acquisition of a 796"
+  },
+  {
+   "i": 169,
+   "s": 256.563,
+   "e": 257.763,
+   "text": "percent share in March"
+  },
+  {
+   "i": 170,
+   "s": 258.545,
+   "e": 260.705,
+   "text": "Total advertising expenditure declined"
+  },
+  {
+   "i": 171,
+   "s": 260.705,
+   "e": 261.905,
+   "text": "by 22 percent in"
+  },
+  {
+   "i": 172,
+   "s": 261.905,
+   "e": 263.825,
+   "text": "2025 and is expected"
+  },
+  {
+   "i": 173,
+   "s": 263.825,
+   "e": 264.785,
+   "text": "to shrink a further"
+  },
+  {
+   "i": 174,
+   "s": 264.785,
+   "e": 266.625,
+   "text": "95 percent in 2026"
+  },
+  {
+   "i": 175,
+   "s": 267.105,
+   "e": 269.265,
+   "text": "Digital advertising expenditure plunged"
+  },
+  {
+   "i": 176,
+   "s": 269.265,
+   "e": 270.705,
+   "text": "39 percent in 2025"
+  },
+  {
+   "i": 177,
+   "s": 271.505,
+   "e": 273.265,
+   "text": "amid intensifying competition from"
+  },
+  {
+   "i": 178,
+   "s": 273.265,
+   "e": 274.945,
+   "text": "social media search engines"
+  },
+  {
+   "i": 179,
+   "s": 274.945,
+   "e": 276.385,
+   "text": "and live commerce platforms"
+  },
+  {
+   "i": 180,
+   "s": 277.007,
+   "e": 278.927,
+   "text": "Artificial intelligence has allegedly"
+  },
+  {
+   "i": 181,
+   "s": 278.927,
+   "e": 280.607,
+   "text": "compounded these pressures with"
+  },
+  {
+   "i": 182,
+   "s": 280.607,
+   "e": 282.447,
+   "text": "Media Chinese International Limited"
+  },
+  {
+   "i": 183,
+   "s": 282.607,
+   "e": 283.487,
+   "text": "parent company of the"
+  },
+  {
+   "i": 184,
+   "s": 283.487,
+   "e": 285.167,
+   "text": "main Chineselanguage media Sin"
+  },
+  {
+   "i": 185,
+   "s": 285.167,
+   "e": 286.687,
+   "text": "Chew Daily China Press"
+  },
+  {
+   "i": 186,
+   "s": 286.767,
+   "e": 287.967,
+   "text": "and Nanyang Siang Pau"
+  },
+  {
+   "i": 187,
+   "s": 288.207,
+   "e": 289.647,
+   "text": "retrenching 44 percent of"
+  },
+  {
+   "i": 188,
+   "s": 289.647,
+   "e": 290.767,
+   "text": "its workforce in mid"
+  },
+  {
+   "i": 189,
+   "s": 290.767,
+   "e": 292.687,
+   "text": "2025 as it integrated"
+  },
+  {
+   "i": 190,
+   "s": 292.687,
+   "e": 294.207,
+   "text": "AI across its operations"
+  },
+  {
+   "i": 191,
+   "s": 294.909,
+   "e": 296.029,
+   "text": "Print has collapsed since"
+  },
+  {
+   "i": 192,
+   "s": 296.029,
+   "e": 298.429,
+   "text": "2017 from 45 percent"
+  },
+  {
+   "i": 193,
+   "s": 298.429,
+   "e": 300.189,
+   "text": "to 14 percent Television"
+  },
+  {
+   "i": 194,
+   "s": 300.189,
+   "e": 301.469,
+   "text": "has also declined from"
+  },
+  {
+   "i": 195,
+   "s": 301.469,
+   "e": 302.989,
+   "text": "54 percent to 36"
+  },
+  {
+   "i": 196,
+   "s": 302.989,
+   "e": 304.029,
+   "text": "percent over the past"
+  },
+  {
+   "i": 197,
+   "s": 304.029,
+   "e": 305.629,
+   "text": "decade Online news and"
+  },
+  {
+   "i": 198,
+   "s": 305.629,
+   "e": 306.829,
+   "text": "social media for news"
+  },
+  {
+   "i": 199,
+   "s": 306.829,
+   "e": 307.949,
+   "text": "have risen steadily since"
+  },
+  {
+   "i": 200,
+   "s": 308.029,
+   "e": 308.909,
+   "text": "2024"
+  },
+  {
+   "i": 201,
+   "s": 309.693,
+   "e": 310.973,
+   "text": "Peaking at 41 percent"
+  },
+  {
+   "i": 202,
+   "s": 310.973,
+   "e": 312.973,
+   "text": "in 2021 trust in"
+  },
+  {
+   "i": 203,
+   "s": 312.973,
+   "e": 314.253,
+   "text": "news stood at 40"
+  },
+  {
+   "i": 204,
+   "s": 314.253,
+   "e": 316.173,
+   "text": "percent in 2023 likely"
+  },
+  {
+   "i": 205,
+   "s": 316.173,
+   "e": 317.533,
+   "text": "reflecting optimism around a"
+  },
+  {
+   "i": 206,
+   "s": 317.533,
+   "e": 319.693,
+   "text": "new reformist government stabilised"
+  },
+  {
+   "i": 207,
+   "s": 319.693,
+   "e": 320.893,
+   "text": "at 37 percent for"
+  },
+  {
+   "i": 208,
+   "s": 320.973,
+   "e": 322.493,
+   "text": "two consecutive years but"
+  },
+  {
+   "i": 209,
+   "s": 322.493,
+   "e": 324.413,
+   "text": "dropped significantly to 30"
+  },
+  {
+   "i": 210,
+   "s": 324.413,
+   "e": 325.293,
+   "text": "percent this year as"
+  },
+  {
+   "i": 211,
+   "s": 325.293,
+   "e": 326.493,
+   "text": "the optimism appears to"
+  },
+  {
+   "i": 212,
+   "s": 326.493,
+   "e": 327.053,
+   "text": "have waned"
+  },
+  {
+   "i": 213,
+   "s": 327.405,
+   "e": 328.925,
+   "text": "Broadcast brands led by"
+  },
+  {
+   "i": 214,
+   "s": 328.925,
+   "e": 330.365,
+   "text": "Astro Awani remain the"
+  },
+  {
+   "i": 215,
+   "s": 330.365,
+   "e": 331.085,
+   "text": "most trusted"
+  },
+  {
+   "i": 216,
+   "s": 331.729,
+   "e": 332.369,
+   "text": "Thank you for your"
+  },
+  {
+   "i": 217,
+   "s": 332.369,
+   "e": 332.929,
+   "text": "listening"
+  }
+ ]
+}

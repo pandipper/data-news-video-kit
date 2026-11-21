@@ -1,0 +1,201 @@
+{
+  "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia",
+  "capturedAt": "2026-11-19T07:35:12.376Z",
+  "viewport": 1280,
+  "dpr": 2,
+  "pageH": 12045,
+  "targets": [
+    {
+      "label": "bignum_2",
+      "x": 111,
+      "y": 5458,
+      "w": 305,
+      "h": 66,
+      "text": "18%"
+    },
+    {
+      "label": "bignum_3",
+      "x": 469,
+      "y": 5458,
+      "w": 305,
+      "h": 66,
+      "text": "39%"
+    },
+    {
+      "label": "bignum_4",
+      "x": 111,
+      "y": 5829,
+      "w": 305,
+      "h": 66,
+      "text": "30%"
+    },
+    {
+      "label": "bignum_5",
+      "x": 111,
+      "y": 7951,
+      "w": 305,
+      "h": 66,
+      "text": "95/180"
+    },
+    {
+      "label": "head_0",
+      "x": 96,
+      "y": 4564,
+      "w": 692,
+      "h": 36,
+      "text": "Changing media"
+    },
+    {
+      "label": "head_1",
+      "x": 111,
+      "y": 5438,
+      "w": 305,
+      "h": 21,
+      "text": "Pay for online news"
+    },
+    {
+      "label": "head_2",
+      "x": 469,
+      "y": 5438,
+      "w": 305,
+      "h": 21,
+      "text": "Avoid the news sometimes/often"
+    },
+    {
+      "label": "head_3",
+      "x": 96,
+      "y": 5699,
+      "w": 692,
+      "h": 57,
+      "text": "Trust"
+    },
+    {
+      "label": "head_4",
+      "x": 111,
+      "y": 5808,
+      "w": 305,
+      "h": 21,
+      "text": "Trust in news overall"
+    },
+    {
+      "label": "head_5",
+      "x": 111,
+      "y": 7931,
+      "w": 305,
+      "h": 21,
+      "text": "RSF World Press Freedom Index"
+    },
+    {
+      "label": "head_6",
+      "x": 96,
+      "y": 8866,
+      "w": 692,
+      "h": 36,
+      "text": "Footnotes"
+    },
+    {
+      "label": "head_10",
+      "x": 96,
+      "y": 10911,
+      "w": 682,
+      "h": 36,
+      "text": "Meet the authors"
+    },
+    {
+      "label": "para_0",
+      "x": 96,
+      "y": 355,
+      "w": 692,
+      "h": 192,
+      "text": "Malaysia’s contemporary media landscape is currently characterised by a sharp paradox. The long-awaited Malaysian Media "
+    },
+    {
+      "label": "para_1",
+      "x": 96,
+      "y": 572,
+      "w": 692,
+      "h": 160,
+      "text": "The passing of the Malaysian Media Council Act saw the establishment of the Malaysian Media Council (MMC) in June 2025. "
+    },
+    {
+      "label": "para_2",
+      "x": 96,
+      "y": 757,
+      "w": 692,
+      "h": 132,
+      "text": "The MMC has moved quickly to take public positions on press freedom incidents. In January, it called the arrest of journ"
+    },
+    {
+      "label": "para_3",
+      "x": 96,
+      "y": 913,
+      "w": 692,
+      "h": 288,
+      "text": "Events such as a daytime attack on sports journalist Haresh Deol in November 2025 have caused further unease among journ"
+    },
+    {
+      "label": "para_4",
+      "x": 96,
+      "y": 1226,
+      "w": 692,
+      "h": 356,
+      "text": "The major recent policy development has been the implementation in January 2026 of the Online Safety Act (OSA) 2025, whi"
+    },
+    {
+      "label": "para_5",
+      "x": 96,
+      "y": 1607,
+      "w": 692,
+      "h": 224,
+      "text": "Malaysiakini, the country’s oldest independent news portal, endured a troubled year. Having already laid off staff as pa"
+    },
+    {
+      "label": "para_6",
+      "x": 96,
+      "y": 1856,
+      "w": 692,
+      "h": 352,
+      "text": "Around a third (32%) of Malaysians now access content from influencers and content creators who are focused on the news."
+    },
+    {
+      "label": "para_8",
+      "x": 96,
+      "y": 2482,
+      "w": 692,
+      "h": 132,
+      "text": "Total advertising expenditure declined by 22% in 2025 and is expected to shrink a further 9.5% in 2026. Digital advertis"
+    },
+    {
+      "label": "para_9",
+      "x": 96,
+      "y": 2639,
+      "w": 692,
+      "h": 164,
+      "text": "Artificial intelligence has allegedly compounded these pressures, with Media Chinese International Limited (MCIL), paren"
+    },
+    {
+      "label": "para_34",
+      "x": 96,
+      "y": 4624,
+      "w": 692,
+      "h": 96,
+      "text": "Print has collapsed since 2017, from 45% to 14%. Television has also declined, from 54% to 36% over the past decade. Onl"
+    },
+    {
+      "label": "para_37",
+      "x": 96,
+      "y": 6673,
+      "w": 692,
+      "h": 160,
+      "text": "Peaking at 41% in 2021, trust in news stood at 40% in 2023, likely reflecting optimism around a new reformist government"
+    },
+    {
+      "label": "para_57",
+      "x": 96,
+      "y": 8926,
+      "w": 692,
+      "h": 68,
+      "text": "1 Majlis Media Malaysia/Malaysian Media Council, Press Statements and Council Announcements, June 2025–March 2026. https"
+    }
+  ]
+}

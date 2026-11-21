@@ -1,0 +1,243 @@
+{
+  "_note": "证据出处总表。每条事实给出机构 + 日期 + URL，供画面 kicker 与出处行直接取用。铁律：画面数字只用念白里出现的（见 docs/locked_script.md），机构名与日期以本表为准。",
+  "generatedAt": "2026-11-20",
+  "primary": {
+    "org": "Reuters Institute",
+    "kicker": "REUTERS INSTITUTE",
+    "title": "Malaysia — Digital News Report 2026",
+    "authors": ["Zaharom Nain", "Aril Mikhail"],
+    "date": "2026-06-16",
+    "dateLabel": "JUN 2026",
+    "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia",
+    "pageCapture": "docs/page/page.png (2560x24090, dpr2)",
+    "targets": "docs/page/targets.json"
+  },
+  "facts": {
+    "C01": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "MALAYSIA'S MEDIA LANDSCAPE IN 2026",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C02": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "A SHARP PARADOX",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C03": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "HOPES TESTED",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C04": {
+      "kicker": "MMC",
+      "dateLabel": "JUN 2025",
+      "headline": "THE COUNCIL IS ESTABLISHED",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C05": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "A DEPARTURE FROM DECADES",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C06": {
+      "kicker": "MALAY MAIL",
+      "dateLabel": "JAN 2026",
+      "headline": "JOURNALIST ARRESTED OVER A QUESTION",
+      "claim": "MMC called the arrest unnecessary and punitive and demanded his immediate release",
+      "attribution": "Malaysian Media Council",
+      "sources": [
+        { "org": "CNA", "date": "2026-01-17", "url": "https://www.channelnewsasia.com/asia/malaysia-journalist-free-malaysia-today-rex-tan-released-bail-detained-gaza-galloway-5866326", "note": "含 MMC 原话 unnecessary and punitive，与念白逐字一致；此为主源" },
+        { "org": "Free Malaysia Today", "date": "2026-01-17", "url": "https://www.freemalaysiatoday.com/category/nation/2026/01/17/former-journalist-reports-to-police-station-and-detained", "note": "FMT 自家报道，MMC 副主席 Premesh Chandran 称 excessive" },
+        { "org": "Malay Mail", "date": "2026-01-17", "url": "https://www.malaymail.com/", "note": "社媒新闻卡截图来源，见 assets/news" }
+      ],
+      "media": ["assets/news/Malay Mail_Journalist Rex Tan was arrested after posing a question deemed to carry racial overtones during a public lecture in Kuala Lumpur.jpg", "assets/news/FMT_AN APOLOGY FROM REX TAN.jpg", "assets/portrait/rex-tan.jpg"],
+      "redline": [
+        "unnecessary and punitive 是 MMC 的表态，画面必须带 MMC 归属行，不能写成旁白结论",
+        "不同源对 MMC 措辞有 unnecessary and punitive / excessive 两版，念白用前者，画面文字跟随念白",
+        "Sedition Act 标题在图里可保留，旁白与画面文字不额外强调",
+        "FMT 道歉声明不是 MMC 表态的证据，两件事分开"
+      ]
+    },
+    "C07": {
+      "kicker": "THE RAKYAT POST",
+      "dateLabel": "NOV 2025",
+      "headline": "ATTACKED IN DAYLIGHT",
+      "sources": [
+        { "org": "The Rakyat Post", "date": "2025-11-25", "url": "https://www.therakyatpost.com/?p=1019244" },
+        { "org": "Bernama", "date": "2025-11-25", "url": "https://www.bernama.com/en/news.php?id=2495266" }
+      ],
+      "media": ["assets/news/The Rakyat Post_Assault on journalist Haresh Deol.jpg"]
+    },
+    "C08": {
+      "kicker": "FIFA",
+      "dateLabel": "SEP 2025",
+      "headline": "FAM AND SEVEN PLAYERS SANCTIONED",
+      "sources": [
+        { "org": "FIFA", "date": "2025-09-26", "url": "https://vod.fifa.com/news/fifa-sanctions-football-association-of-malaysia-and-seven-players" },
+        { "org": "Bernama", "date": "2025-12-08", "url": "https://bernama.com/en/news.php?id=2499953", "note": "复盘稿，确认 9 月 26 日发布" }
+      ],
+      "media": ["assets/news/The Stoly_The FIFA Disciplinary Committee has imposed sanctions on the Football Association of Malaysia (FAM) and seven players.jpg"],
+      "redline": ["念白只说 forgery and falsification，不提罚款金额；The Stoly 图上的 RM1.8 MILLION FINE 必须裁掉或遮掉"]
+    },
+    "C09": {
+      "kicker": "THE RAKYAT POST",
+      "dateLabel": "NOV 2025",
+      "headline": "TWO ATTACKED, A THIRD FILMED",
+      "sources": [{ "org": "The Rakyat Post", "date": "2025-11-25", "url": "https://www.therakyatpost.com/?p=1019244" }]
+    },
+    "C10": {
+      "kicker": "THE STAR",
+      "dateLabel": "JAN 2026",
+      "headline": "FINED RM2,000",
+      "sources": [
+        { "org": "The Star", "date": "2026-01-22", "url": "https://www.thestar.com.my/news/nation/2026/01/22/delivery-man-fined-rm2000-for-assaulting-senior-journalist" },
+        { "org": "TwentyTwo13", "date": "2026-01", "url": "", "note": "法庭照截图，见 assets/news" }
+      ],
+      "media": ["assets/news/twentytwo13_Haresh Deol assault suspect pleaded guilty fined RM2000.png"],
+      "redline": ["只写 RM2,000，不写约 500 美元换算"]
+    },
+    "C11": {
+      "kicker": "MCMC",
+      "dateLabel": "JAN 2026",
+      "headline": "THE ONLINE SAFETY ACT IS IN FORCE",
+      "sources": [
+        { "org": "MCMC", "date": "2026-01-01", "url": "https://www.mcmc.gov.my/en/onsa/information-hub/regulatory-legal", "note": "官方：2026-01-01 起社媒与即时通讯服务商视为持 ASP 类执照" },
+        { "org": "Bernama", "date": "2026-01", "url": "", "note": "报道截图，见 assets/news" }
+      ],
+      "media": ["assets/news/bernama_Online Safety Act 2025.png"]
+    },
+    "C12": {
+      "kicker": "MCMC",
+      "dateLabel": "JAN 2026",
+      "headline": "PROTECT CHILDREN · STOP SCAMS · FIGHT FRAUD",
+      "sources": [{ "org": "MCMC", "date": "2026-01-01", "url": "https://www.mcmc.gov.my/en/onsa/information-hub/regulatory-legal" }],
+      "attribution": "The government"
+    },
+    "C13": {
+      "kicker": "CIJ · ARTICLE 19 · SINAR PROJECT",
+      "dateLabel": "OCT 2025",
+      "headline": "THE RISK OF ABUSE IS HIGH",
+      "claim": "the risk of abuse and selective enforcement is high, with growing evidence of targeted suppression or arbitrary takedowns",
+      "sources": [
+        { "org": "CIJ", "date": "2025-10-04", "url": "https://cijmalaysia.net/wp-content/uploads/2025/10/Press-statement-on-eKYC.pdf", "note": "e-KYC 联合声明，逐字含原文那句" },
+        { "org": "ARTICLE 19", "date": "2025-10-04", "url": "https://www.article19.org/resources/malaysia-halt-hasty-imposition-of-mandatory-electronic-verification" }
+      ],
+      "media": ["assets/news/cijmalaysia_倒数第二段有 the risk of abuse and selective enforcement is high.png"],
+      "redline": ["三家是同一份联合声明（原文用单数 a lengthy statement），不要画成三份独立声明"]
+    },
+    "C14": {
+      "kicker": "THE EDGE",
+      "dateLabel": "MAR 2026",
+      "headline": "A TROUBLED YEAR",
+      "sources": [{ "org": "The Edge", "date": "2026-03", "url": "https://theedgemalaysia.com/node/795120" }],
+      "media": ["assets/news/The eage_Malaysiakini management firm files police report after.jpg"]
+    },
+    "C15": {
+      "kicker": "THE EDGE",
+      "dateLabel": "MAR 2026",
+      "headline": "RM3 MILLION DIVERTED",
+      "sources": [
+        { "org": "The Edge", "date": "2026-03", "url": "https://theedgemalaysia.com/node/795120" },
+        { "org": "Free Malaysia Today", "date": "2026-03-05", "url": "https://www.freemalaysiatoday.com/category/nation/2026/03/05/malaysiakini-lodges-police-report-over-rm3mil-fund-diversion" }
+      ],
+      "redline": ["念白只给 RM3m（约 75 万美元）与 2026 年 3 月发现；图上的 between March 2023 and March 2024 是附带信息，不强调"]
+    },
+    "C16": {
+      "kicker": "THE EDGE",
+      "dateLabel": "MAR 2026",
+      "headline": "RESERVES BUILT OVER A DECADE",
+      "sources": [{ "org": "The Edge", "date": "2026-03", "url": "https://theedgemalaysia.com/node/795120" }]
+    },
+    "C17": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "32% GET NEWS FROM CREATORS",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C18": {
+      "kicker": "SPOTIFY · YOUTUBE",
+      "dateLabel": "2026",
+      "headline": "WEEKLY PODCASTS",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }],
+      "media": [
+        "assets/portrait/khairy-jamaluddin.jpg",
+        "assets/portrait/idris-jala.jpg",
+        "assets/portrait/the-game-of-impossible-leon-idris.jpg",
+        "assets/portrait/roshinee-mookaiah.jpg",
+        "assets/logo/spotify.svg",
+        "assets/logo/instagram.svg"
+      ],
+      "todo": ["节目封面图不采用：YouTube 频道头像抓取超时且分辨率低；改用人物卡 + 节目名 + 平台标识（Spotify / YouTube）表达，符合「标注出处 + 说清事实即证据」"]
+    },
+    "C19": {
+      "kicker": "YOUTUBE",
+      "dateLabel": "2026",
+      "headline": "COMMENTARY, REFRESHING AND INDEPENDENT",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }],
+      "media": ["assets/portrait/rafizi-ramli.jpg", "assets/logo/youtube.svg"]
+    },
+    "C20": {
+      "kicker": "ASTRO AWANI · RTM",
+      "dateLabel": "2026",
+      "headline": "EDITOR-IN-CHIEF MOVES TO RTM",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }],
+      "media": ["assets/portrait/ashwad-ismail.jpg", "assets/logo/astro-awani.png", "assets/logo/rtm.svg"],
+      "redline": ["Ashwad 是三人群像（中间为本人），用时要标注非单人"]
+    },
+    "C21": {
+      "kicker": "MEDIA PRIMA",
+      "dateLabel": "MAR 2026",
+      "headline": "25% AND 7.96%",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }],
+      "media": [
+        "assets/portrait/johari-abdul-ghani.jpg",
+        "assets/portrait/amir-nashrin.jpg",
+        "assets/logo/media-prima.svg"
+      ],
+      "redline": ["Johari 是双人合影，用时要标注", "7.96% 按锁定稿写，禁止写成 796"]
+    },
+    "C22": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "-22% · -9.5% · -39%",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }],
+      "redline": ["9.5% 按锁定稿写，禁止写成 95"]
+    },
+    "C23": {
+      "kicker": "MEDIA CHINESE INTERNATIONAL",
+      "dateLabel": "MID 2025",
+      "headline": "44% OF STAFF CUT",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }],
+      "todo": ["Media Chinese International / Sin Chew / China Press / Nanyang 的 logo 不采用：改用文字报头式排版，比贴 logo 更合 code-drawn 语言"]
+    },
+    "C24": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "PRINT 45% → 14%",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C25": {
+      "kicker": "REUTERS INSTITUTE",
+      "dateLabel": "JUN 2026",
+      "headline": "TRUST 41% → 30%",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }]
+    },
+    "C26": {
+      "kicker": "ASTRO AWANI",
+      "dateLabel": "JUN 2026",
+      "headline": "MOST TRUSTED",
+      "sources": [{ "org": "Reuters Institute", "date": "2026-06-16", "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/malaysia" }],
+      "media": ["assets/logo/astro-awani.png"]
+    },
+    "C27": {
+      "kicker": "",
+      "dateLabel": "",
+      "headline": "THANK YOU FOR LISTENING",
+      "sources": []
+    }
+  }
+}

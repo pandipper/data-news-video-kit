@@ -1,0 +1,39 @@
+# 素材与产物（第三方版权 / 体积过大）
+assets/news/
+assets/portrait/
+assets/logo/
+background/
+audio/
+video/renders/
+video/remotion/public/assets/
+*.flac
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+!assets/sources.json
+
+# 依赖
+node_modules/
+video/remotion/node_modules/
+_tools/node_modules/
+
+# 上游仓库（按 README 指引自行 clone，不入库）
+_ref_anything2explainer/
+_libs/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# 临时
+_tmp*
+_tmp_*
+*.log

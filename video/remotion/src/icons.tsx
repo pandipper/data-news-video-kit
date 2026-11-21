@@ -1,0 +1,298 @@
+import React from 'react';
+import {WHITE, PURPLE} from './ui';
+
+/**
+ * 题材图标库：新闻 / 媒体 / 监管题材的线性图标（Lucide 1.76，ISC 许可，可商用）。
+ *
+ * 颜色：全部图标只用 currentColor 或 fill:none，无任何硬编码色值 —— 传 color 即改色，
+ * 白 / 灰 / 琥珀随意切换，必要时加 glow 走琥珀柔光。vault 的实心部分同样跟随 currentColor。
+ * 造型：24 基准 viewBox、round 线帽、纯描边，与 a2e 的白线稿图元同一套语言，不需要风格适配。
+ *
+ * 与「背景点阵」的分工：这些图标承担语义（mic=提问、gavel=裁决），是画面图元；
+ * 背景的数量感仍走 DotFieldBg / ClusterGrid（composition-and-light.md:18）。
+ *
+ * 线宽按视觉像素给：sw 是屏幕上的实际描边宽度（px），内部换算成 viewBox 单位，
+ * 所以 size 从 40 放大到 400 时线宽始终不变粗。
+ *
+ * 使用原则（用户 2026-11-20 定）：语义要明确、配色要搭；放不进去的可以不用，
+ * 不为了凑图元硬塞 —— 图元是信息，不是填空。
+ */
+export type IconName =
+  | 'mic'
+  | 'camera'
+  | 'video'
+  | 'podcast'
+  | 'radio'
+  | 'megaphone'
+  | 'headphones'
+  | 'newspaper'
+  | 'message-square'
+  | 'gavel'
+  | 'shield'
+  | 'stamp'
+  | 'scale'
+  | 'scroll'
+  | 'fingerprint'
+  | 'siren'
+  | 'lock'
+  | 'eye-off'
+  | 'ban'
+  | 'file-text'
+  | 'file-x'
+  | 'quote'
+  | 'chart-pie'
+  | 'percent'
+  | 'trending-down'
+  | 'banknote'
+  | 'coins'
+  | 'vault'
+  | 'briefcase'
+  | 'layout-grid'
+  | 'smartphone'
+  | 'tv'
+  | 'globe'
+  | 'cpu'
+  | 'bot'
+  | 'sparkles'
+  | 'user'
+  | 'users'
+  | 'building-2'
+  | 'landmark'
+  | 'badge-check'
+  | 'award'
+  | 'calendar'
+  | 'clock'
+  | 'hourglass'
+  | 'split'
+  | 'triangle-alert'
+  | 'scissors';
+
+const PATHS: Record<IconName, React.ReactNode> = {
+  // ---- 媒体与现场 ----
+  'mic': (
+    <><path d="M12 19v3" /> <path d="M19 10v2a7 7 0 0 1-14 0v-2" /> <rect x="9" y="2" width="6" height="13" rx="3" /></>
+  ),
+  'camera': (
+    <><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z" /> <circle cx="12" cy="13" r="3" /></>
+  ),
+  'video': (
+    <><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" /> <rect x="2" y="6" width="14" height="12" rx="2" /></>
+  ),
+  'podcast': (
+    <><path d="M12 17v4" /> <path d="M18 11a6 6 0 00-3-5.197" /> <path d="M2 11a10 10 0 015-8.662" /> <path d="M22 11a10 10 0 00-5-8.662" /> <path d="M6 11a6 6 0 013-5.197" /> <path d="M9 21h6" /> <rect x="10" y="9" width="4" height="8" rx="2" /></>
+  ),
+  'radio': (
+    <><path d="M16.247 7.761a6 6 0 0 1 0 8.478" /> <path d="M19.075 4.933a10 10 0 0 1 0 14.134" /> <path d="M4.925 19.067a10 10 0 0 1 0-14.134" /> <path d="M7.753 16.239a6 6 0 0 1 0-8.478" /> <circle cx="12" cy="12" r="2" /></>
+  ),
+  'megaphone': (
+    <><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" /> <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" /> <path d="M8 6v8" /></>
+  ),
+  'headphones': (
+    <><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" /></>
+  ),
+  'newspaper': (
+    <><path d="M15 18h-5" /> <path d="M18 14h-8" /> <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2" /> <rect width="8" height="4" x="10" y="6" rx="1" /></>
+  ),
+  'message-square': (
+    <><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" /></>
+  ),
+  // ---- 法律与监管 ----
+  'gavel': (
+    <><path d="m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381" /> <path d="m16 16 6-6" /> <path d="m21.5 10.5-8-8" /> <path d="m8 8 6-6" /> <path d="m8.5 7.5 8 8" /></>
+  ),
+  'shield': (
+    <><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /></>
+  ),
+  'stamp': (
+    <><path d="M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13" /> <path d="M20 15.5a2.5 2.5 0 0 0-2.5-2.5h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1z" /> <path d="M5 22h14" /></>
+  ),
+  'scale': (
+    <><path d="M12 3v18" /> <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /> <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M7 21h10" /></>
+  ),
+  'scroll': (
+    <><path d="M19 17V5a2 2 0 0 0-2-2H4" /> <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /></>
+  ),
+  'fingerprint': (
+    <><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" /> <path d="M14 13.12c0 2.38 0 6.38-1 8.88" /> <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" /> <path d="M2 12a10 10 0 0 1 18-6" /> <path d="M2 16h.01" /> <path d="M21.8 16c.2-2 .131-5.354 0-6" /> <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" /> <path d="M8.65 22c.21-.66.45-1.32.57-2" /> <path d="M9 6.8a6 6 0 0 1 9 5.2v2" /></>
+  ),
+  'siren': (
+    <><path d="M7 18v-6a5 5 0 1 1 10 0v6" /> <path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z" /> <path d="M21 12h1" /> <path d="M18.5 4.5 18 5" /> <path d="M2 12h1" /> <path d="M12 2v1" /> <path d="m4.929 4.929.707.707" /> <path d="M12 12v6" /></>
+  ),
+  'lock': (
+    <><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /></>
+  ),
+  'eye-off': (
+    <><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" /> <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" /> <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" /> <path d="m2 2 20 20" /></>
+  ),
+  'ban': (
+    <><circle cx="12" cy="12" r="10" /> <path d="M4.929 4.929 19.07 19.071" /></>
+  ),
+  // ---- 文书与引语 ----
+  'file-text': (
+    <><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></>
+  ),
+  'file-x': (
+    <><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="m14.5 12.5-5 5" /> <path d="m9.5 12.5 5 5" /></>
+  ),
+  'quote': (
+    <><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /> <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></>
+  ),
+  // ---- 数据与钱 ----
+  'chart-pie': (
+    <><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z" /> <path d="M21.21 15.89A10 10 0 1 1 8 2.83" /></>
+  ),
+  'percent': (
+    <><line x1="19" x2="5" y1="5" y2="19" /> <circle cx="6.5" cy="6.5" r="2.5" /> <circle cx="17.5" cy="17.5" r="2.5" /></>
+  ),
+  'trending-down': (
+    <><path d="M16 17h6v-6" /> <path d="m22 17-8.5-8.5-5 5L2 7" /></>
+  ),
+  'banknote': (
+    <><rect width="20" height="12" x="2" y="6" rx="2" /> <circle cx="12" cy="12" r="2" /> <path d="M6 12h.01M18 12h.01" /></>
+  ),
+  'coins': (
+    <><path d="M13.744 17.736a6 6 0 1 1-7.48-7.48" /> <path d="M15 6h1v4" /> <path d="m6.134 14.768.866-.5 2 3.464" /> <circle cx="16" cy="8" r="6" /></>
+  ),
+  'vault': (
+    <><rect width="18" height="18" x="3" y="3" rx="2" /> <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /> <path d="m7.9 7.9 2.7 2.7" /> <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" /> <path d="m13.4 10.6 2.7-2.7" /> <circle cx="7.5" cy="16.5" r=".5" fill="currentColor" /> <path d="m7.9 16.1 2.7-2.7" /> <circle cx="16.5" cy="16.5" r=".5" fill="currentColor" /> <path d="m13.4 13.4 2.7 2.7" /> <circle cx="12" cy="12" r="2" /></>
+  ),
+  'briefcase': (
+    <><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></>
+  ),
+  // ---- 平台与技术 ----
+  'layout-grid': (
+    <><rect width="7" height="7" x="3" y="3" rx="1" /> <rect width="7" height="7" x="14" y="3" rx="1" /> <rect width="7" height="7" x="14" y="14" rx="1" /> <rect width="7" height="7" x="3" y="14" rx="1" /></>
+  ),
+  'smartphone': (
+    <><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /> <path d="M12 18h.01" /></>
+  ),
+  'tv': (
+    <><path d="m17 2-5 5-5-5" /> <rect width="20" height="15" x="2" y="7" rx="2" /></>
+  ),
+  'globe': (
+    <><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></>
+  ),
+  'cpu': (
+    <><path d="M12 20v2" /> <path d="M12 2v2" /> <path d="M17 20v2" /> <path d="M17 2v2" /> <path d="M2 12h2" /> <path d="M2 17h2" /> <path d="M2 7h2" /> <path d="M20 12h2" /> <path d="M20 17h2" /> <path d="M20 7h2" /> <path d="M7 20v2" /> <path d="M7 2v2" /> <rect x="4" y="4" width="16" height="16" rx="2" /> <rect x="8" y="8" width="8" height="8" rx="1" /></>
+  ),
+  'bot': (
+    <><path d="M12 8V4H8" /> <rect width="16" height="12" x="4" y="8" rx="2" /> <path d="M2 14h2" /> <path d="M20 14h2" /> <path d="M15 13v2" /> <path d="M9 13v2" /></>
+  ),
+  'sparkles': (
+    <><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /></>
+  ),
+  // ---- 人物与机构 ----
+  'user': (
+    <><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></>
+  ),
+  'users': (
+    <><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <path d="M16 3.128a4 4 0 0 1 0 7.744" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <circle cx="9" cy="7" r="4" /></>
+  ),
+  'building-2': (
+    <><path d="M10 12h4" /> <path d="M10 8h4" /> <path d="M14 21v-3a2 2 0 0 0-4 0v3" /> <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /> <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></>
+  ),
+  'landmark': (
+    <><path d="M10 18v-7" /> <path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" /> <path d="M14 18v-7" /> <path d="M18 18v-7" /> <path d="M3 22h18" /> <path d="M6 18v-7" /></>
+  ),
+  'badge-check': (
+    <><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m16 9-5.5 5.5L8 12" /></>
+  ),
+  'award': (
+    <><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></>
+  ),
+  // ---- 时间与结构 ----
+  'calendar': (
+    <><path d="M8 2v3" /> <path d="M16 2v3" /> <rect x="3" y="3" width="18" height="18" rx="2" /> <path d="M3 9h18" /></>
+  ),
+  'clock': (
+    <><circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" /></>
+  ),
+  'hourglass': (
+    <><path d="M5 22h14" /> <path d="M5 2h14" /> <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /> <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></>
+  ),
+  'split': (
+    <><path d="M16 3h5v5" /> <path d="M8 3H3v5" /> <path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3" /> <path d="m15 9 6-6" /></>
+  ),
+  // ---- 风险与削减 ----
+  'triangle-alert': (
+    <><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /></>
+  ),
+  'scissors': (
+    <><circle cx="6" cy="6" r="3" /> <path d="M8.12 8.12 12 12" /> <path d="M20 4 8.12 15.88" /> <circle cx="6" cy="18" r="3" /> <path d="M14.8 14.8 20 20" /></>
+  ),
+};
+
+
+export type IconProps = {
+  name: IconName;
+  /** 左端坐标 */
+  x: number;
+  /** 顶端坐标 */
+  y: number;
+  size?: number;
+  color?: string;
+  /** 屏幕上实际的描边宽度（px），与 size 解耦 */
+  sw?: number;
+  opacity?: number;
+  /** 琥珀柔光 */
+  glow?: boolean;
+  style?: React.CSSProperties;
+};
+
+export const Icon: React.FC<IconProps> = ({name, x, y, size = 120, color = WHITE, sw = 2.6, opacity = 1, glow = false, style}) => (
+  <svg
+    viewBox="0 0 24 24"
+    width={size}
+    height={size}
+    fill="none"
+    stroke={color}
+    strokeWidth={(sw * 24) / size}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    style={{
+      position: 'absolute',
+      left: x,
+      top: y,
+      opacity,
+      filter: glow ? 'drop-shadow(0 0 14px rgba(240,160,48,.65))' : undefined,
+      ...style,
+    }}
+  >
+    {PATHS[name]}
+  </svg>
+);
+
+/**
+ * 图标框：图标 + 描边容器，a2e 的实体图元形态（LLMIcon 就是方块 + 点阵）。
+ * 用于需要「一个实体」的场合：机构、平台、证件。
+ */
+export const IconBadge: React.FC<{
+  name: IconName;
+  x: number;
+  y: number;
+  /** 框宽 = 框高 */
+  box?: number;
+  iconRatio?: number;
+  color?: string;
+  accent?: string;
+  sw?: number;
+  r?: number;
+  opacity?: number;
+  glow?: boolean;
+}> = ({name, x, y, box = 180, iconRatio = 0.52, color = WHITE, accent = PURPLE, sw = 3, r = 20, opacity = 1, glow = false}) => {
+  const ic = box * iconRatio;
+  return (
+    <div style={{position: 'absolute', left: x, top: y, width: box, height: box, opacity}}>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          border: sw + 'px solid ' + color,
+          borderRadius: r,
+          boxShadow: glow ? '0 0 34px 6px rgba(240,160,48,.35)' : undefined,
+        }}
+      />
+      <Icon name={name} x={(box - ic) / 2} y={(box - ic) / 2} size={ic} color={accent} sw={sw * 0.9} />
+    </div>
+  );
+};
