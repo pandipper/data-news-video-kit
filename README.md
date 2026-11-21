@@ -82,11 +82,52 @@ Node ≥ 20.19（Vite 7 的要求）。Remotion 首次渲染会下载 Chrome Hea
 
 `script/termbase.md` 锁定人名与机构名的写法，避免同一个 `Khairy Jamaluddin` 在片中三种拼法。
 
-### 2 出旁白与时间轴
+### 2 配音（Qwen3-TTS 魔搭 Demo）
 
-旁白用任意 TTS，产出 `audio.mp3`（48kHz 立体声）。
+旁白用 **Qwen3-TTS**，直接在魔搭的在线 Demo 里跑，不用本地装环境：
 
-逐词对齐后得到 `words.json`，格式：
+👉 https://modelscope.cn/studios/Qwen/Qwen3-TTS
+
+本片是英文旁白，可选音色里 `Ryan`（节奏感强的动态男声）和 `Aiden`（阳光美式男声）最合适。中文片可换 `Vivian` / `Serena` / `Uncle_Fu`。
+
+**分段合成，不要一次喂全文。** 五个原因：
+
+- 长文本容易出现语气漂移（开头严肃、三分钟后变平）
+- 某一句读错，只需重跑那一句，不用重跑五分半
+- 每段的时长可控，方便对齐章节边界
+- 情绪指令（`instruct`）可以按段落分别给
+- 段落文件是后续逐词对齐的输入单位
+
+实操上按章节切（本片 27 段），每段 1–3 句。`instruct` 填语气描述，例如：
+
+```
+沉稳、克制的新闻播报语调，语速偏慢，句末下沉
+```
+
+导出后按顺序拼接，统一转 48kHz：
+
+```bash
+# 拼接（先写一个 files.txt，每行一个 wav）
+ffmpeg -f concat -safe 0 -i files.txt -c copy joined.wav
+
+# 重采样到工程要求
+ffmpeg -i joined.wav -ar 48000 -ac 2 audio.mp3
+```
+
+**逐词对齐。** 时间轴精度决定字幕和图标 cue 的精度，推荐两个方案：
+
+| 方案 | 说明 |
+|---|---|
+| **Qwen3-ForcedAligner** | Qwen3-ASR 配套，词/短语级时间戳，11 种语言，精度优于 MFA/CTC |
+| WhisperX | 生态成熟，中文需额外分词处理 |
+
+对齐产物转成 `words.json`（见下节格式）。
+
+> 若想本地部署：`pip install qwen3-tts`，然后 `qwen-tts-demo Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice --port 8000`。1.7B 需 6–8GB 显存，0.6B 需 4–6GB。
+
+### 2.5 时间轴
+
+`words.json` 格式：
 
 ```json
 [{"w": "Malaysia's", "s": 0.0, "e": 1.52, "cid": "C01"}]
@@ -148,7 +189,88 @@ ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of csv=p=0 
 
 不等就是镜头区间有重叠或空档，tsc 查不出来。
 
+### 4.5 垫乐选择
+
+垫乐是这条片子最容易被忽视、也最容易翻车的一环。选定前先过五道筛子：
+
+| 筛子 | 标准 | 为什么 |
+|---|---|---|
+| **长度** | ≥ 片长，一遍覆盖 | 不够就得循环，接缝处必然有断点 |
+| **无人声** | 纯器乐 | 有人声采样会和旁白抢注意力 |
+| **无强旋律** | 织体为主，旋律线弱 | 强旋律会被记住，反复听就烦 |
+| **动态范围** | LRA 5–7 | 太低（<3）闷成一片，太高（>10）忽大忽小 |
+| **频段留白** | 200–800Hz 不厚 | 这是人声区，占住了就糊字 |
+
+本片用的是 **PaperClip（回形针）《GOOD SHOW》**（339.07s / 44.1kHz / 24bit / 立体声）：
+
+- 长度 339.07s 对片子 337.19s，**一遍够用，零循环、零接缝**
+- LRA 6.00，段落起伏明显（开头弱 4.6 dB → 主体 → 结尾收）
+- 本身 Side/Mid 仅 −15.6 dB，立体声宽度够，不需要大改
+
+素材到手先跑三条命令，比听十遍更准：
+
+```bash
+# 1 长度与格式
+ffprobe -v error -show_entries format=duration -show_entries stream=sample_rate,channels -of default=noprint_wrappers=1 bed.flac
+
+# 2 响度与动态（看 input_lra）
+ffmpeg -hide_banner -i bed.flac -af "loudnorm=I=-16:print_format=json" -f null - 2>&1 | grep -A5 input_i
+
+# 3 内部静音断点（若有多段静音，说明是分段作品，循环点要选在乐段结束处）
+ffmpeg -hide_banner -i bed.flac -af "silencedetect=noise=-50dB:d=1" -f null - 2>&1 | grep silence
+```
+
+选好之后进混音，见下节。
+
 ### 5 混音
+
+三条轨：旁白、垫乐、总限幅。目标是旁白 −16 LUFS，垫乐比旁白低 **12 dB**（这是验证过"念白清晰且不单调"的比例）。
+
+```bash
+ffmpeg -i bed.wav -i voice.mp3 -filter_complex "
+  [0:a]aresample=48000,extrastereo=m=1.4,
+       equalizer=f=95:g=2.4,equalizer=f=210:g=-1.6,
+       volume=-6.4dB[bed];
+  [bed][1:a]sidechaincompress=threshold=0.07:ratio=2.4:attack=15:release=380[ducked];
+  [ducked][1:a]amix=inputs=2:normalize=0,loudnorm=I=-16:TP=-1.5[out]
+" -map "[out]" -ar 48000 mix.flac
+```
+
+四处参数的理由：
+
+- `extrastereo=m=1.4` — 垫乐加宽。M/S 矩阵处理，不引入延迟，低频不会相位抵消（**不要用 `stereowiden` 的 delay 做这件事**，它会毁掉低频）
+- `equalizer 95Hz +2.4` — 混音后旁白占据中高频，低频会显得薄，补一点超低频细节
+- `equalizer 210Hz −1.6` — 给旁白基频（85–180Hz）让位
+- `sidechaincompress` — 人声密集处垫乐退让。`attack 15ms` 跟得上起音，`release 380ms` 保证句间短停顿不会让音乐忽上忽下
+
+**验证混音是否合格**，看三个数：
+
+```bash
+# 响度与真峰值
+ffmpeg -hide_banner -i mix.flac -af "loudnorm=I=-16:TP=-1:print_format=json" -f null - 2>&1 | grep -A4 input_i
+# 目标：I ≈ -16，TP ≤ -1
+
+# 削波
+ffmpeg -hide_banner -i mix.flac -af volumedetect -f null - 2>&1 | grep max_volume
+# 目标：max ≤ -1，且 histogram_0db 为 0
+
+# 分段相对差（旁白 vs 垫乐，抽查 5 处）
+# 目标：全片 8–14 dB 之间，任何一段都不低于 6 dB
+```
+
+分段相对差是这条片子唯一的硬伤来源。如果某一段旁白本身录得轻（本片 3:50 处就低 4–5 dB），而垫乐保持恒定，那一段会突然"音乐变大"——此时单纯靠闪避补不回来，需要整体降垫乐电平。
+
+替换进视频：
+
+```bash
+ffmpeg -i full.mp4 -i mix.flac -map 0:v -map 1:a \
+  -c:v copy -c:a aac -b:a 320k -movflags +faststart final.mp4
+```
+
+`-c:v copy` 保证画质零损失。
+
+
+
 
 旁白 −16 LUFS，垫乐比旁白低 12 dB，人声密集处做侧链闪避：
 
