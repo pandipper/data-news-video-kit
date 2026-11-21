@@ -553,27 +553,6 @@ a2e 默认把它放在最低层（原设计里章节卡占章前空白）。本�
 
 > **Required Notice:** Copyright (c) 2026 Vincent Wei (https://github.com/Vincentwei1021/anything2explainer)
 
-**为什么不是 MIT。** 这不是选择，是约束——`remotion/src` 里的 `Main.tsx`、`ui.tsx`、`fx.tsx`、`overlay/` 都来自 anything2explainer，本仓库是它的衍生作品。上游用 PolyForm Noncommercial，衍生作品必须继承同一许可，不能单方面改成 MIT（MIT 允许商用，会与上游直接冲突）。
-
-许可范围：
-
-| 内容 | 许可 | 说明 |
-|---|---|---|
-| Remotion 工程、镜头代码、脚本 | PolyForm Noncommercial 1.0.0 | 非商业免费，商业需授权 |
-| 文档、截图、`sources.json` | 同上 | 作为工程的组成部分 |
-| 用这套工具产出的**视频** | **归创作者所有** | 不受上述限制 |
-| 字体（`public/fonts/`） | SIL OFL 1.1 | 可自由分发 |
-| 图标（Lucide） | ISC | 见 `tools/LUCIDE_LICENSE.txt` |
-
-**商业使用怎么办。** 两步：
-
-1. 找 [Vincent Wei](https://github.com/Vincentwei1021/anything2explainer) 拿 anything2explainer 的商业授权
-2. 本仓库随之放开（因为它的约束全部来自上游）
-
-**只想参考思路、不想受约束。** 读 README 的前半部分和 `docs/project-log.md` 就够了——那里面是方法论（怎么取证、怎么排版、怎么混音），不涉及代码许可。代码部分重新实现一遍即可。
-
-本片成片（[YouTube 上那条](https://www.youtube.com/watch?v=5FSVn6ccTNo)）的版权归制作方，与代码许可无关。
-
 ---
 
 ## 致谢
