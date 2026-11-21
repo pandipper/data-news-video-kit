@@ -24,6 +24,45 @@
 
 全片 53 个镜头，217 条词级字幕，六个章节卡。
 
+## 画面参考
+
+八种镜头语言，全部由代码绘制。真图只出现在证据卡里（新闻截图、播客封面、人物头像），其余都是排版、数字与图标。
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/ch1_c01.png" alt="署名镜"></td>
+<td width="50%"><img src="docs/screenshots/ch1_c02b.png" alt="大数字"></td>
+</tr>
+<tr>
+<td><sub><b>署名</b>　C01 · 压印字 + 图标 cue</sub></td>
+<td><sub><b>大数字</b>　C02b · 2005 用 FONT_HEAVY，非 Orbitron</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/ch2_c06b.png" alt="证据卡"></td>
+<td><img src="docs/screenshots/ch2_c07.png" alt="左文右图"></td>
+</tr>
+<tr>
+<td><sub><b>证据卡</b>　C06b · 压印大字 + 截图卡片 + 出处 tab</sub></td>
+<td><sub><b>左文右图</b>　C07 · 栏线 + 衬线排版感</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/c08b.png" alt="数字加框"></td>
+<td><img src="docs/screenshots/ch2_c11a.png" alt="法案名"></td>
+</tr>
+<tr>
+<td><sub><b>量级</b>　C08b · 大数字 + 描边框 + 归类标签</sub></td>
+<td><sub><b>法案名</b>　C11a · 四词并列 + 日期行</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/ch4_c18a.png" alt="双封面并置"></td>
+<td><img src="docs/screenshots/ch4_c20b.png" alt="流程箭头"></td>
+</tr>
+<tr>
+<td><sub><b>双图并置</b>　C18a · 两张封面同族处理（纸边 + 网点）</sub></td>
+<td><sub><b>流程</b>　C20b · 人事流动，箭头 draw-on</sub></td>
+</tr>
+</table>
+
 ---
 
 ## 目录

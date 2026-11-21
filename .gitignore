@@ -14,6 +14,11 @@ video/remotion/public/assets/
 *.jpg
 *.jpeg
 *.png
+
+# 例外：README 用的画面截图（本片自有产出，非第三方素材）
+!docs/screenshots/
+!docs/screenshots/*.png
+
 !assets/sources.json
 
 # 依赖
